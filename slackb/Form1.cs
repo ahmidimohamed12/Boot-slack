@@ -26,7 +26,7 @@ namespace slackb
             bn.Location = new Point(80, 80);
             bn.Text = "Send";
             bn.Click += btn_s;
-
+               
             this.Controls.Add(tx);
             this.Controls.Add(bn);
         }
