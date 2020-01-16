@@ -33,7 +33,7 @@ namespace slackb
 
         private void btn_s(object sender,EventArgs e)
         {
-            var client = new SbmClient("https://hooks.slack.com/services/xxxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxxxx");
+            var client = new SbmClient("https://hooks.slack.com/services/xxxxxxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxx");
             SlackBotMessages.Models.Message p = new SlackBotMessages.Models.Message("ok");
             p.Username = "various";
             p.Channel = "random";
