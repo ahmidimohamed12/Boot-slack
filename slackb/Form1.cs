@@ -12,11 +12,13 @@ namespace slackb
 {
     public partial class Form1 : Form
     {
+        TextBox tx;
+        Button bn;
         public Form1()
         {
             InitializeComponent();
-            Button bn = new Button();
-            TextBox tx = new TextBox();
+             bn = new Button();
+             tx = new TextBox();
 
             tx.Width = 70;
             tx.Height = 40;
@@ -34,7 +36,7 @@ namespace slackb
         private void btn_s(object sender,EventArgs e)
         {
             var client = new SbmClient("https://hooks.slack.com/services/xxxxxxxxxxxxx/xxxxxxxxxx/xxxxxxxxxxxxxx");
-            SlackBotMessages.Models.Message p = new SlackBotMessages.Models.Message("ok");
+            SlackBotMessages.Models.Message p = new SlackBotMessages.Models.Message(tx.Text);
             p.Username = "various";
             p.Channel = "random";
             p.IconEmoji = ":eggplant:";
